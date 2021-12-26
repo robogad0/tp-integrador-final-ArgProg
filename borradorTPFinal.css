@@ -1,0 +1,92 @@
+body {
+    background-color: rgb(249, 242, 237);
+    /* font-family: 'Roboto Mono', monospace; */
+    font-family: 'Spline Sans', sans-serif;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forward;  
+    /* background-image: url(file:///D:/USUARIO/Downloads/Estudio%20Azul%20Moderno%20Anuncio%20de%20Facebook.png);
+     background-position-x: center; 
+     background-position: top;
+     background-attachment: scroll;
+     background-repeat: no-repeat;*/
+     background-image: url(file:///D:/USUARIO/Downloads/wormz.png);
+}
+
+.containerFoto{
+    position: relative;
+}
+
+.fotoPersonal{
+    position: absolute;
+    top: 500px;
+    left: 150px;
+    background-color: transparent;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+@keyframes fadeInAnimation{
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
+/* small is  576+ pixels       
+@media (min-width: 576px){
+    body {
+        background-color: yellowgreen;
+    }
+}
+
+@media (max-width: 992px){
+    body{
+        background-color: aquamarine;
+    }
+} */
+/* diseño responsivo: a los 575.98px se cambia el formato según las instrucciones que le de
+en los corchetes */
+@media (max-width: 575.98px) {
+    body{
+        background-color: salmon;
+    }
+    /*.container {flex-direction: column;} */
+
+    .fotoPersonal{
+        position: absolute;
+        top: 190px;
+        left: 18px;
+        background-color: transparent;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100px;
+        height: 30px;
+    }
+    
+}
+
+ a{
+    color: white;
+    text-decoration: none;
+} 
+
+.nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav >li {
+    display: inline;
+    float: right;
+}
+
+.botonLogin{
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.botonLogin:hover{
+    opacity: 0.8;
+    text-decoration: underline;
+}

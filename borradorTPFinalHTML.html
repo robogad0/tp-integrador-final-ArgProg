@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- metadata para hacer el documento responsivo para dispositivos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- el width=device-width establece el ancho de la página según el ancho de la pantalla del dispositivo,
+    mientras que initial-scale= determina el zoom inicial de la página cuando es cargada por primera vez
+    por el navegador  -->   
+
+    <!--
+       grid-breakpoints: (
+       xs: 0,
+       sm: 576px,
+       md: 768px,
+       lg: 992px,
+       xl: 1200px,
+       xxl: 1400px
+                      );
+    -->
+    <title>documento borrador del portafolio web (tp integrador final ArgProg)</title>
+    <link rel="stylesheet" href="borradorTPFinal.css">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="borrador tp final JS y jQuery (eventos).js"></script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Prompt:wght@500&family=Sarabun:ital,wght@1,300&family=Spline+Sans&display=swap');
+    </style>
+<body>
+
+    
+    <ul class="nav justify-content-between mb-2 mt-3 mx-2" style="align-items: start; ">
+        <!-- logo y texto de ArgPrograma -->
+        <li class="nav-item" style="float: left;"><a href="/"></a><img class="rounded rounded-3"
+            src="https://test.argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1638311812/APLogo-20-20.png" 
+            alt="ArgProgLogo" width="90px" style="background-color: black;"></a> 
+            <span>Argentina Programa - #YoProgramo</span> 
+        </li>
+
+
+        <!-- sector con redes sociales y botón de login -->
+        <li class="nav-item">
+            <a href="instagram.com/robogadoo" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="Instagram" width="20px">
+            </a>
+
+            <a href="twitter.com" target="_blank">
+                <img src="https://actuary.eu/wp-content/uploads/2017/06/8800.png" alt="Twitter" width="20px">
+            </a>
+
+            <button class="btn btn-dark botonLogin">login</button>
+            
+         </li>
+    </ul>
+
+
+      <!-- banner --> 
+
+      
+      <div class="container-sm d-flex mb-3 containerFoto">
+              <img class="img-fluid rounded mx-auto d-block" width="1000px"
+              src="https://cdn-images.welcometothejungle.com/5nor3lMrYguU3kF10FvpU_8SNzzdOiSRCiAGLMRAZRI/rs:auto:1500::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9hcnRpY2xlL2ltYWdlLzQwMjEvMTU5MTM0L3JlbW90ZS1vcGVuLXNvdXJjZS5wbmc"
+              >
+          </div> 
+       
+
+      <div class="container-sm d-flex mb-4 me-5">
+          <div class="row justify-content-center">
+              <div class="col-4">
+                <!-- <img class="img-thumbnail fotoPersonal" src="file:///D:/USUARIO/Desktop/otros/3.jpg" alt="fotoPersonal" style="height: 200px;">
+                <br> -->
+                <ul class="list-unstyled" style="font-size: large;">
+                    <li>Rocío Bogado</li>
+                    <li>Full Stack Developer Jr.</li> 
+                </ul>
+            </div> 
+
+              <div class="col-8"><h1 style="font-size: xx-large;">acerca de mí</h1>
+                <h2 style="font-size: large;">hola! mi nombre es Rocío Bogado, soy una joven estudiante universitaria de la ciudad
+                    de Rosario, Santa Fe. Además de mis estudios académicos, desde que estoy en la escuela secundaria
+                me interesa la programación asi que decidí capacitarme para trabajar como programadora. Ahora soy
+            Full Stack dev jr re crack </h2>
+            </div>
+        </div>
+      </div>
+
+      <div class="container-sm">
+        <h1 id="expLaboral" >experiencia laboral</h1><br>
+          <table style="width: 100%;" id="tablaExpLaboral">
+        <tr><td style="width: 20%;"><img src="https://i0.wp.com/lapasteleriarosario.online/wp-content/uploads/2021/06/La-Pasteleria-Rosario-dulce-salado-y-mas.-La-mejor-relacion-precio-calidad-1-e1623538614313.png?fit=150%2C140&ssl=1"
+            alt="logoPanaderia" width="130px"></td>
+
+            <td><h5>atención al público en Panadería "La Pastelería", desde diciembre del año 2019 a diciembre del año 2020
+            </h5></td>
+            <td><svg id="plusTrabajo" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+              </svg>
+            
+                <ul id="tareasTrabajo">
+                    <li style="list-style-type: none; margin-left: 0;">Descripción de tareas del puesto:</li>
+                    <li>atención a clientes en el local</li>
+                    <li>tomar y armar pedidos</li>
+                    <li>mantenimiento y limpieza general del local</li>
+                    <li>manejo de la caja</li>
+            </ul>
+            </td>
+        </tr>
+    </table>
+    </div>
+    <br>
+
+    <div class="container-sm">
+        <h1 id="educacion">educación</h1><br>
+        <table style="width: 100%;" id="tablaEducacion">
+            <tr>
+                <td style="width: 20%;"></td>
+                <td><h5>egresada en el año 2019 en la Escuela Superior de Comercio Libertador Gral. San Martín,
+                    escuela perteneciente a la Universidad Nacional de Rosario, con Bachiller en Economía y Administración
+                </h5>
+                </td>
+            </tr>    
+            <tr>
+                <td><img src="https://lh3.googleusercontent.com/proxy/H1RBK6ayigUXjEEDDEz7YGH0Oydxz4s7K5Yc2mF4oEvf_mkGNuBprB_VOPkGeDh10hjbuB1qYF86efohaWq3vyYuDuFkjtaJksJ9bR2oCDsXYDUtweEXYw
+                    " alt="logoUNR" width="160px"></td>
+                <td><h5>estudiante de Psicología en la Universidad Nacional de Rosario</h5>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><h5>certifiación en curso de Preceptoría Nivel I, dictado por la Facultad de Derecho,
+                    perteneciente a la Universidad Nacional de Rosario en el año 2021</h5>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img class="rounded rounded-3"
+                    src="https://test.argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1638311812/APLogo-20-20.png" 
+                    alt="ArgProgLogo" width="120px" style="background-color: grey;"
+                    >
+                </td>
+                <td><h5>certificación en la primera etapa del Plan Argentina Programa #SéProgramar, en el año 2021</h5>
+                </td>
+            </tr>
+        </table> 
+        </div>
+
+
+
+    
+
+      
+
+
+</body>
+</html>
