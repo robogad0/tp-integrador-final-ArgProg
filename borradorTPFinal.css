@@ -49,7 +49,14 @@ en los corchetes */
     body{
         background-color: salmon;
     }
-    /*.container {flex-direction: column;} */
+    #logoPanaderia {
+        width: 100px;
+    }
+    #plusTrabajo{
+        width: 15px;
+        height: 15px;
+    }
+    
 
     .fotoPersonal{
         position: absolute;
@@ -63,7 +70,9 @@ en los corchetes */
     }
     
 }
-
+.container-sm{
+    margin: auto;
+}
  a{
     color: white;
     text-decoration: none;

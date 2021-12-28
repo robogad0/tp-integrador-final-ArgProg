@@ -1,9 +1,6 @@
 $(document).ready(function(){
 
 
-
-
-
     $("#tablaExpLaboral").hide();
 
     $("#expLaboral").click(function(){
