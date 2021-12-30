@@ -27,9 +27,11 @@ $(document).ready(function(){
     $(".botonLogin").mousemove(function(){
     });
 
+    $("#barrasHabi").hide();
     $("#skills").hide();
     $("#habTitulo").click(function(){
         $("#skills").fadeToggle();
+        $("#barrasHabi").fadeToggle();
     });
 
     
