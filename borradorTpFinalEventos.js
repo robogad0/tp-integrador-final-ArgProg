@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+    $("body").hide();
+    $("body").ready(function(){
+        $("body").fadeIn();
+    });
 
     $("#tablaExpLaboral").hide();
 
@@ -21,9 +25,23 @@ $(document).ready(function(){
     });
 
     $(".botonLogin").mousemove(function(){
-        
     });
+
+    $("#skills").hide();
+    $("#habTitulo").click(function(){
+        $("#skills").fadeToggle();
+    });
+
     
+    
+
+
+
+
+
+
+
+
 
 
 
